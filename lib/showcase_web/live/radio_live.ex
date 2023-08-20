@@ -42,7 +42,7 @@ defmodule ShowcaseWeb.RadioLive do
                   <div class="mt-10">
                     <div class="flex">
                       <img
-                        class="w-24 h-24 rounded-full ring-4 ring-white sm:h-32 sm:w-32"
+                        class="w-48 h-24 rounded-full ring-4 ring-white sm:h-24 sm:w-32"
                         src={@active_mix.image_url}
                         alt=""
                       />
