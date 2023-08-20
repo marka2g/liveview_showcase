@@ -1,0 +1,30 @@
+<header class="px-4 sm:px-6 lg:px-8">
+  <div class="flex items-center justify-between py-3 border-b border-zinc-100">
+    <div class="flex items-center gap-4">
+      <.link id="logo" href="/">
+        <div class="text-xl text-orange-500">
+          LiveView<span class="pl-2 font-extrabold tracking-tight text-neutral-600">Showcase</span>
+        </div>
+      </.link>
+    </div>
+  </div>
+</header>
+<main class="px-4 py-20 sm:px-6 lg:px-8">
+  <div class="max-w-3xl mx-auto">
+    <.flash kind={:info} title="Success!" flash={@flash} />
+    <.flash kind={:error} title="Error!" flash={@flash} />
+    <.flash
+      id="disconnected"
+      kind={:error}
+      title="We can't find the internet"
+      close={false}
+      autoshow={false}
+      phx-disconnected={show("#disconnected")}
+      phx-connected={hide("#disconnected")}
+    >
+      Attempting to reconnect
+      <.icon name="hero-arrow-path-solid" class="w-3 h-3 ml-1 animate-spin" />
+    </.flash>
+    <%= @inner_content %>
+  </div>
+</main>
