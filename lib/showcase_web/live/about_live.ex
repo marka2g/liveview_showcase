@@ -20,6 +20,7 @@ defmodule ShowcaseWeb.AboutLive do
                 <ul>
                   <li><code>assert_redirect()</code></li>
                   <li><code>follow_redirect()</code></li>
+                  <li><code>html_response()</code></li>
                 </ul>
               </div>
             </div>
