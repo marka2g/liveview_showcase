@@ -10,13 +10,13 @@ defmodule ShowcaseWeb.PageHTML do
   def link_item(assigns) do
     ~H"""
     <.link navigate={@navigate}>
-      <li class="relative flex items-center justify-between px-2 py-5 text-lg rounded-md text-sky-600 hover:text-sky-700 hover:bg-neutral-100">
+      <li class="relative flex items-center justify-between px-2 py-5 text-lg rounded-md text-sky-600 hover:text-sky-700 hover:bg-zinc-100">
         <div>
           <.icon name={@icon} class="mb-1" />
           <%= render_slot(@inner_block) %>
         </div>
         <svg
-          class="flex-none w-5 h-5 text-neutral-400"
+          class="flex-none w-5 h-5 text-zinc-400"
           viewBox="0 0 20 20"
           fill="currentColor"
           aria-hidden="true"

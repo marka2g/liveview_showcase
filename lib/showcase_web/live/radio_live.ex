@@ -8,24 +8,24 @@ defmodule ShowcaseWeb.RadioLive do
     <div class="flex h-full">
       <div class="flex flex-col flex-1 min-w-0 overflow-hidden">
         <div class="flex flex-1 overflow-hidden">
-          <aside class="flex flex-col flex-shrink-0 border-r w-96 border-neutral-200">
+          <aside class="flex flex-col flex-shrink-0 border-r w-96 border-zinc-200">
             <div class="px-6 pt-6 pb-4">
-              <h2 class="text-lg font-medium text-neutral-900">Mark's Dj Mixes</h2>
+              <h2 class="text-lg font-medium text-zinc-900">Mark's Dj Mixes</h2>
             </div>
             <nav class="flex-1 min-h-0 overflow-y-auto" aria-label="All Mixes">
               <div class="relative">
-                <div class="sticky top-0 px-6 py-1 border-b border-neutral-200 bg-neutral-50"></div>
-                <ul role="list" class="relative divide-y divide-neutral-200">
+                <div class="sticky top-0 px-6 py-1 border-b border-zinc-200 bg-zinc-50"></div>
+                <ul role="list" class="relative divide-y divide-zinc-200">
                   <li :for={mix <- @mixes}>
-                    <div class="relative flex items-center px-6 py-5 space-x-3 focus-within:ring-2 focus-within:ring-inset focus-within:ring-sky-500 hover:bg-neutral-50">
+                    <div class="relative flex items-center px-6 py-5 space-x-3 focus-within:ring-2 focus-within:ring-inset focus-within:ring-sky-500 hover:bg-zinc-50">
                       <div class="flex-shrink-0">
-                        <img class="w-10 h-10 rounded-full" src={mix.image_url} alt="" />
+                        <img class="w-16 h-12 rounded-full" src={mix.image_url} alt="" />
                       </div>
                       <div class="flex-1 min-w-0">
                         <.link data-role="mix" patch={~p"/radio/#{mix.id}"} class="focus:outline-none">
                           <span class="absolute inset-0" aria-hidden="true"></span>
-                          <p class="text-sm font-medium text-neutral-900"><%= mix.title %></p>
-                          <p class="text-sm truncate text-neutral-500"><%= mix.release_date %></p>
+                          <p class="text-sm font-medium text-zinc-900"><%= mix.title %></p>
+                          <p class="text-sm truncate text-zinc-500"><%= mix.release_date %></p>
                         </.link>
                       </div>
                     </div>
@@ -49,7 +49,7 @@ defmodule ShowcaseWeb.RadioLive do
                     </div>
                   </div>
                   <div class="flex-1 min-w-0 mt-6 sm:block">
-                    <h1 class="text-2xl font-bold truncate text-neutral-900">
+                    <h1 class="text-2xl font-bold truncate text-zinc-900">
                       <%= @active_mix.title %>
                     </h1>
                   </div>
@@ -63,6 +63,20 @@ defmodule ShowcaseWeb.RadioLive do
             </article>
           </main>
         </div>
+      </div>
+    </div>
+    <hr />
+    <div class="flex gap-12 mt-12">
+      <div class="basis-1/2">
+        Topic: <code>patch</code>
+      </div>
+      <div class="basis-1/2">
+        Testing with:
+        <ul>
+          <li><code>assert_patch()</code></li>
+          <li><code>render_click()</code></li>
+          <li><code>element()</code></li>
+        </ul>
       </div>
     </div>
     """

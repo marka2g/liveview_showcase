@@ -5,13 +5,13 @@
         <div>
           <div>
             <h1 class="text-4xl font-extrabold tracking-tight text-orange-500 sm:text-center sm:text-6xl">
-              <span class="pl-2 font-extrabold tracking-tight text-neutral-600">Showcase</span>
               LiveView
+              <span class="pl-2 font-extrabold tracking-tight text-zinc-600">Showcase</span>
             </h1>
           </div>
           <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
             <svg
-              class="relative left-[calc(50%+3rem)] h-[21.1875rem] max-w-none -translate-x-1/2 sm:left-[calc(50%+36rem)] sm:h-[42.375rem]"
+              class="relative left-[calc(50%+3rem)] h-[21.1875rem] max-w-none -tranzinc-x-1/2 sm:left-[calc(50%+36rem)] sm:h-[42.375rem]"
               viewBox="0 0 1155 678"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -37,17 +37,13 @@
             </svg>
           </div>
 
-          <ul role="list" class="max-w-xl mx-auto mt-20 divide-y divide-neutral-100">
+          <ul role="list" class="max-w-xl mx-auto mt-20 divide-y divide-zinc-100">
             <.link_item icon="hero-radio" navigate={~p"/radio"}>
               Radio <hr />
-              <div>
-                Testing with:
-                <ul>
-                  <li><code>assert_patch()</code></li>
-                  <li><code>render_click()</code></li>
-                  <li><code>element()</code></li>
-                </ul>
-              </div>
+            </.link_item>
+            
+            <.link_item icon="hero-book-open" navigate={~p"/about"}>
+              Tabs <hr />
             </.link_item>
           </ul>
         </div>
