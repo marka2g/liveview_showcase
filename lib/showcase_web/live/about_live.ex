@@ -16,7 +16,7 @@ defmodule ShowcaseWeb.AboutLive do
                 Topic: <code>Tabs</code>
               </div>
               <div class="basis-1/2">
-                Testing with:
+                Testing with functions:
                 <ul>
                   <li><code>assert_redirect()</code></li>
                   <li><code>follow_redirect()</code></li>
