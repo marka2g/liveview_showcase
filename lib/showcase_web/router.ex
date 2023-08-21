@@ -21,6 +21,12 @@ defmodule ShowcaseWeb.Router do
 
     live "/radio", RadioLive, :index
     live "/radio/:id", RadioLive, :show
+
+    # tabs example
+    live_session :app do
+      live "/about", AboutLive
+      live "/awards", AwardsLive
+    end
   end
 
   # Other scopes may use custom stacks.
