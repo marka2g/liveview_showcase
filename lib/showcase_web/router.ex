@@ -22,6 +22,8 @@ defmodule ShowcaseWeb.Router do
     live "/radio", RadioLive, :index
     live "/radio/:id", RadioLive, :show
 
+    live "/users/:user_id/controls", ControlsLive
+
     # tabs example
     live_session :app do
       live "/about", AboutLive
