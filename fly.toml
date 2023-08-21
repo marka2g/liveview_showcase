@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for liveview-showcase on 2023-08-20T16:45:16-07:00
+# fly.toml app configuration file generated for showcase-liveview on 2023-08-20T17:05:17-07:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = "liveview-showcase"
+app = "showcase-liveview"
 primary_region = "lax"
 kill_signal = "SIGTERM"
 swap_size_mb = 512
@@ -14,7 +14,7 @@ swap_size_mb = 512
   release_command = "/app/bin/migrate"
 
 [env]
-  PHX_HOST = "liveview-showcase.fly.dev"
+  PHX_HOST = "showcase-liveview.fly.dev"
   PORT = "8080"
 
 [http_service]
