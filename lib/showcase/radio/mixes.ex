@@ -1,4 +1,7 @@
 defmodule Showcase.Radio.Mixes do
+  @moduledoc """
+  Mixes module for the Showcase App. Provides dummy data for a list of mixes
+  """
   def all do
     [
       %{

@@ -1,4 +1,7 @@
 defmodule ShowcaseWeb.Telemetry do
+  @moduledoc """
+  Telemetry module  to provide metrics
+  """
   use Supervisor
   import Telemetry.Metrics
 

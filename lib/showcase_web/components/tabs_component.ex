@@ -1,4 +1,7 @@
 defmodule ShowcaseWeb.TabsComponent do
+  @moduledoc """
+  TabsComponent builds tab links
+  """
   use Phoenix.Component
 
   use Phoenix.VerifiedRoutes,

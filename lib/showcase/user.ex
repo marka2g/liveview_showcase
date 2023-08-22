@@ -1,4 +1,7 @@
 defmodule Showcase.User do
+  @moduledoc """
+  User Schema for the Showcase App
+  """
   use Ecto.Schema
   import Ecto.Changeset
 
